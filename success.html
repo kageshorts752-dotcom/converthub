@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Payment successful — ConvertHub</title><link rel="stylesheet" href="styles.css"></head>
+<body><main style="max-width:640px;margin:12vh auto;padding:0 20px;text-align:center">
+<h1>Payment successful 🎉</h1>
+<p id="msg">Your plan is being activated…</p>
+<p><a href="/">Back to ConvertHub →</a></p></main>
+<script>
+const q = new URLSearchParams(location.search);
+const plan = q.get("plan"), txnid = q.get("txnid");
+if (plan === "pro" || plan === "business") {
+  localStorage.setItem("converthub_plan", plan);
+  localStorage.setItem("converthub_txnid", txnid || "");
+  document.getElementById("msg").textContent =
+    "ConvertHub " + (plan === "pro" ? "Pro" : "Business") + " is now active on this browser" +
+    (txnid ? " (payment " + txnid + ")" : "") + ". Bigger files and unlimited batch are unlocked here.";
+} else {
+  document.getElementById("msg").textContent = "Payment received, but the plan could not be confirmed. Please contact support with your payment reference.";
+}
+</script></body></html>

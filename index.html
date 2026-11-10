@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>ConvertHub – Convert PDF, Video &amp; Audio Online Free</title>
+<meta name="google-site-verification" content="6QiT_2Q7mqoVgWoJ-L0wPiP1soBZjQYFen_r3KXpywU" />
+<meta name="description" content="ConvertHub — convert PDF, video and audio online free. PDF converter, video converter and audio converter with 57 free tools. Convert PDF to JPG, MP4 to MP3, MP3 to WAV and more, in your browser, no uploads." />
+<link rel="canonical" href="https://converthub-tools.vercel.app/" />
+<meta property="og:title" content="ConvertHub — Free PDF, Video & Audio Converter" />
+<meta property="og:description" content="57 free converter tools for PDF, video, audio and images. Convert in your browser, no uploads." />
+<meta property="og:url" content="https://converthub-tools.vercel.app/" />
+<meta property="og:type" content="website" />
+<meta name="robots" content="index, follow" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lamejs@1.2.1/lame.min.js"></script>
+<link rel="stylesheet" href="styles.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "ConvertHub",
+      "url": "https://converthub-tools.vercel.app/",
+      "description": "Free online PDF, video and audio converter with 57 tools."
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "ConvertHub",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Web",
+      "url": "https://converthub-tools.vercel.app/",
+      "description": "Convert PDF, video and audio online free. PDF converter, video converter and audio converter \u2014 convert PDF to JPG, MP4 to MP3, MP3 to WAV, compress and resize, all in your browser with no uploads.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "keywords": "convert, converthub, pdf converter, video converter, audio converter, convert pdf, convert video, convert audio"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are my files uploaded to a server?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Every tool on this page runs in your browser, so your files never leave your device. There is no sign-up and no queue."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which formats can I convert?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Images: JPG, PNG, WebP, AVIF, BMP, GIF and HEIC \u2014 out to JPG, PNG or WebP, plus PDF. PDF: to JPG/PNG images, Word (.doc), plain text, compressed PDF, merged and rotated. Audio: MP3, WAV, M4A, OGG, FLAC and Opus in \u2014 MP3 or WAV out. Video: MP4, MOV, WebM and more in \u2014 WebM out, or MP3/WAV audio extracted."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will converting reduce quality?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lossy formats (MP3, JPG, AAC) discard data every time they are re-encoded, so converting lossy to lossy always costs a little quality. Convert from the highest-quality original you have."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best format for a YouTube Short or Instagram Reel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MP4 with H.264 video and AAC-LC audio, 1080x1920 (9:16), 30 fps, exported at 8-15 Mbps, with fast start. Shorts are capped at 1080p, so skip the 4K export."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site">
+  <a class="logo" href="#top" aria-label="ConvertHub home">
+    <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h11l-3-3"/><path d="M20 17H9l3 3"/></svg></span>
+    <span>ConvertHub<small>PDF · Video · Audio · Image</small></span>
+  </a>
+  <nav class="main-nav" aria-label="Main">
+    <a href="#tools">Tools</a>
+    <a href="#guide" class="nav-hide">Format guide</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode">
+    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+  </button>
+</header>
+
+<div class="hero" id="top">
+  <div class="hero-in">
+    <h1>Convert, compress &amp; resize<br /><span class="grad">PDF, video, audio &amp; images</span></h1>
+    <p class="sub">Pick a tool, drop your file, download the result. Everything runs right here in your browser — no uploads to a server, no sign-up, no waiting in a queue.</p>
+    <div class="dropzone" id="heroDrop" role="button" tabindex="0" aria-label="Drop a file to start converting">
+      <div class="dz-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4m0 0 4 4m-4-4L8 8"/><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg></div>
+      <strong>Drag &amp; drop your file here</strong>
+      <span>PDF, MP4, MOV, MP3, WAV, JPG, PNG, WebP and more — we'll open the right tool for it</span>
+      <br /><button class="dz-btn" type="button">Choose a file</button>
+      <input type="file" id="heroInput" class="sr-only" multiple />
+    </div>
+    <div class="hero-tags">
+      <span>PDF tools</span><span>Video converter</span><span>MP3 tools</span><span>Image compressor</span><span>Exact KB sizes</span><span>Passport photos</span><span>Batch + ZIP</span>
+    </div>
+    <div class="hero-stats">
+      <span><b>50+ tools</b> in one place</span>
+      <span><b>100% free</b> converter on this page</span>
+      <span><b>0 uploads</b> files stay on your device</span>
+      <span><b>Batch mode</b> convert many files at once</span>
+    </div>
+  </div>
+</div>
+
+<div class="toolbar-wrap">
+  <div class="toolbar">
+    <div class="search-row">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="searchInput" placeholder="Search tools — try “50KB”, “MP3”, “passport”, “thumbnail”…" aria-label="Search tools" />
+      </div>
+    </div>
+    <div class="pills" id="pills" role="tablist" aria-label="Filter tools by category"></div>
+  </div>
+</div>
+
+<main id="tools">
+
+  <!-- Converter workspace -->
+  <section id="workspace" aria-live="polite">
+    <div class="ws-head">
+      <div>
+        <h2 id="wsTitle">Tool</h2>
+        <p id="wsDesc"></p>
+      </div>
+      <button class="ws-close" id="wsClose" aria-label="Close converter">✕</button>
+    </div>
+    <div class="ws-switch">
+      <label for="wsToolSelect">Switch tool:</label>
+      <select id="wsToolSelect"></select>
+      <span class="badges" id="wsBadges"></span>
+    </div>
+    <div class="ws-body">
+      <div>
+        <div class="ws-drop" id="wsDrop" role="button" tabindex="0">
+          <strong>Drop files here or click to browse</strong>
+          <span id="wsAccept">Accepts the formats listed for this tool</span>
+          <input type="file" id="wsInput" class="sr-only" />
+        </div>
+        <div class="file-list" id="fileList"></div>
+        <div class="preview-box" id="previewBox"></div>
+        <div class="err-box" id="wsError"></div>
+        <div class="progress-wrap" id="progressWrap">
+          <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+          <div class="progress-label" id="progressLabel">Working…</div>
+        </div>
+        <div class="results" id="results"></div>
+      </div>
+      <aside class="ctrl-panel">
+        <h3>Settings</h3>
+        <div id="ctrlHost"></div>
+        <button class="convert-btn" id="convertBtn" disabled>Convert</button>
+        <p class="ws-note" id="wsNote"></p>
+      </aside>
+    </div>
+  </section>
+
+  <div class="no-results" id="noResults">
+    <strong>No tools match that search.</strong><br />Try “PDF”, “MP3”, “compress”, “resize” or clear the category filter.
+  </div>
+
+  <div id="sectionsHost"></div>
+
+  <!-- Recent conversions (this session) -->
+  <section id="recents">
+    <div class="sec-head"><h2>Recent conversions</h2><span class="count">this session only — nothing is stored</span></div>
+    <p class="sec-sub">Your latest results from this visit. Download them again here if you closed the converter.</p>
+    <div class="recent-list" id="recentList"></div>
+  </section>
+
+  <!-- Format guide -->
+  <section class="wide-sec" id="guide">
+    <h2>Which format should you pick?</h2>
+    <p class="lede">Researched 8 Nov 2026 from YouTube Help, MDN, Kitaboo, SnipSound and Cloudinary (sources linked under each table). The one rule behind almost every answer: keep a high-quality master, and convert from that master — never convert lossy → lossy.</p>
+
+    <div class="table-card">
+      <h3>Quick picks</h3>
+      <table>
+        <thead><tr><th>Job</th><th>Use this</th><th>Why / caveat</th></tr></thead>
+        <tbody>
+          <tr><td>Sell a PDF guide</td><td>Standard PDF (+ EPUB 3 as a second file)</td><td>PDF looks identical everywhere and opens in any browser; EPUB reflows on phones and ereaders. Don't create new MOBI files — Amazon dropped MOBI for reflowable ebooks in 2021. <span class="src">Source: <a href="https://kitaboo.com/epub-mobi-pdf-difference" target="_blank" rel="noopener">Kitaboo</a> (verified live)</span></td></tr>
+          <tr><td>Upload a Short / Reel</td><td>MP4, H.264 + AAC-LC, 1080×1920, 30 fps</td><td>One export clears YouTube Shorts, Instagram Reels and TikTok. Shorts are capped at 1080p, so a 4K export buys nothing; export at 8–15 Mbps. <span class="src">Sources: <a href="https://support.google.com/youtube/troubleshooter/2888402?hl=en" target="_blank" rel="noopener">YouTube Help</a> (verified live), <a href="https://monty.fast/blog/upload-reels-shorts-without-losing-quality/" target="_blank" rel="noopener">Monty</a></span></td></tr>
+          <tr><td>Sell a video course</td><td>MP4 (H.264 + AAC), 1080p</td><td>Plays everywhere; Udemy wants at least 720p (1080p preferred) and Teachable accepts MP4 up to 2 GB per file. Keep a MOV/ProRes or high-bitrate master. <span class="src">Source: <a href="https://laptopempires.com/teachable-vs-udemy/" target="_blank" rel="noopener">Laptop Empires</a></span></td></tr>
+          <tr><td>Sell audio / podcast</td><td>MP3 192–320 kbps delivery; WAV/FLAC master</td><td>MP3 is the universal podcast standard. Publish podcasts at 128 kbps mono (solo voice) or 192 kbps stereo (with music). <span class="src">Source: <a href="https://snipsound.com/audio-formats/" target="_blank" rel="noopener">SnipSound</a> (verified live)</span></td></tr>
+          <tr><td>Video on your own website</td><td>WebM (VP9/AV1) first + MP4 fallback; HLS over ~1–2 min</td><td>WebM is 30–50% smaller than H.264 MP4; MP4/H.264 is still the only combo every browser decodes in hardware. <span class="src">Sources: <a href="https://cloudinary.com/blog/questions/whats-the-best-way-to-convert-video-formats" target="_blank" rel="noopener">Cloudinary</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebCodecs_API/Codec_selection" target="_blank" rel="noopener">MDN</a></span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-card">
+      <h3>Video codecs compared (relative file size, H.264 = 100)</h3>
+      <table>
+        <thead><tr><th>Format</th><th>Relative size</th><th>Compatibility</th><th>Best for</th></tr></thead>
+        <tbody>
+          <tr><td>MP4 + H.264</td><td>100 (baseline)</td><td>Universal — every device and browser</td><td>Shorts, Reels, courses, everything delivered</td></tr>
+          <tr><td>MP4 + H.265 / HEVC</td><td>~50–60</td><td>Good on Apple/modern devices; patchy in browsers (no Firefox without OS support)</td><td>4K courses, smaller downloads</td></tr>
+          <tr><td>MP4 / WebM + AV1</td><td>~50 vs H.264; ~70 vs H.265</td><td>Decode in &gt;90% of browsers, but Safari needs a hardware decoder (iPhone 15 Pro+, M3 Macs+)</td><td>Web delivery, future-proofing</td></tr>
+          <tr><td>WebM + VP9</td><td>~50–60</td><td>Chrome, Firefox, Edge, newer Safari</td><td>Web pages, streaming</td></tr>
+          <tr><td>MOV + ProRes</td><td>~2000 (20× H.264)</td><td>Apple / editing apps</td><td>Masters and editing only — never delivery</td></tr>
+        </tbody>
+      </table>
+      <p class="src" style="padding:0 18px 14px">Sources: <a href="https://www.xconvert.com/blog/av1-vs-hevc-vs-h264" target="_blank" rel="noopener">XConvert codec comparison</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebCodecs_API/Codec_selection" target="_blank" rel="noopener">MDN</a>. MKV, AVI, WMV, FLV and 3GP are legacy/archival — browsers can't play most of them natively, so convert them to MP4.</p>
+    </div>
+
+    <div class="table-card">
+      <h3>Audio formats compared (size = 1 minute of stereo, 44.1 kHz)</h3>
+      <table>
+        <thead><tr><th>Format</th><th>Type</th><th>Size / min</th><th>Best for</th></tr></thead>
+        <tbody>
+          <tr><td>MP3</td><td>Lossy, 32–320 kbps</td><td>~2.4 MB @ 320k · ~1.4 MB @ 192k · ~0.96 MB @ 128k</td><td>Podcasts, voiceover delivery, selling audio — plays everywhere</td></tr>
+          <tr><td>WAV</td><td>Uncompressed PCM</td><td>~10.1 MB</td><td>Recording, editing, masters</td></tr>
+          <tr><td>FLAC</td><td>Lossless compressed</td><td>~5.5 MB (~55% of WAV)</td><td>Archiving and hi-fi delivery (not native in Apple Music/iOS Music app)</td></tr>
+          <tr><td>AAC / M4A</td><td>Lossy, 96–320 kbps</td><td>~2.0 MB @ 256k</td><td>Streaming, video soundtracks, Apple devices — 128k AAC ≈ 160k MP3 in quality</td></tr>
+          <tr><td>Opus</td><td>Lossy, 6–510 kbps</td><td>~0.2–1 MB</td><td>Best at low bitrates — voice notes, calls, web voice; weak on old players</td></tr>
+        </tbody>
+      </table>
+      <p class="src" style="padding:0 18px 14px">Source: <a href="https://snipsound.com/audio-formats/" target="_blank" rel="noopener">SnipSound</a> (verified live, 8 Nov 2026).</p>
+    </div>
+
+    <div class="warn-card">
+      <h3>Still unconfirmed — check before you lock presets</h3>
+      <ul>
+        <li><strong>No universal file-size limit exists</strong> for converter/SaaS uploads — published examples (32 MB free / 64 MB starter at one SaaS; 20 MB default / 100 MB max at another) are individual products' choices, not standards.</li>
+        <li><strong>Meta publishes no bitrate for organic Reels</strong> — the 10–15 Mbps figures in guides are export advice, not a Meta spec. Reels length also differs between the app (up to 20 min) and the publishing API (15 min).</li>
+        <li><strong>Safari AV1/WebM support depends on hardware and OS version</strong> — that's why the MP4/H.264 fallback matters. Test on a real iPhone rather than trusting a support table.</li>
+        <li>Platform specs change without notice — re-check YouTube Help / Meta / MDN before publishing encoder presets.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="wide-sec" id="pricing">
+    <h2>Pricing</h2>
+    <p class="lede">The converter on this page is free and instant. Plans are for heavier work — bigger files, bigger batches and team use.</p>
+    <div class="plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <div class="price">₹0 <span>/ forever</span></div>
+        <ul>
+          <li>All 50+ converter tools on this page</li>
+          <li>Files up to 100 MB</li>
+          <li>Batch conversion, up to 5 files</li>
+          <li>Exact-KB compression &amp; passport photos</li>
+          <li>No sign-up, no watermark</li>
+        </ul>
+        <a class="plan-btn" href="#tools">Start converting</a>
+      </div>
+      <div class="plan hot">
+        <span class="tag">Most popular</span>
+        <h3>Pro</h3>
+        <div class="price">₹399 <span>/ month</span></div>
+        <ul>
+          <li>Everything in Free</li>
+          <li>Files up to 2 GB — still processed on your device</li>
+          <li>Unlimited batch + ZIP downloads</li>
+          <li>Full quality ladder (1080p / 720p / 480p / 360p)</li>
+          <li>Priority conversion, no queue</li>
+        </ul>
+        <button class="plan-btn" data-plan="pro" type="button">Pay with PayU</button>
+      </div>
+      <div class="plan">
+        <h3>Business</h3>
+        <div class="price">₹999 <span>/ month</span></div>
+        <ul>
+          <li>Everything in Pro</li>
+          <li>Team workspace &amp; shared presets</li>
+          <li>API access for automated conversion</li>
+          <li>Signed download links for customers</li>
+          <li>Priority support</li>
+        </ul>
+        <button class="plan-btn" data-plan="business" type="button">Pay with PayU</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="wide-sec" id="faq">
+    <h2>Frequently asked questions</h2>
+    <p class="lede">Straight answers — including the limits of converting in a browser.</p>
+    <div class="faq-list">
+      <details class="faq"><summary>Are my files uploaded to a server?</summary><p>No. Every tool on this page runs in your browser using its built-in media and PDF engines, so your files never leave your device. That's also why there's no sign-up and no queue.</p></details>
+      <details class="faq"><summary>Which formats can I convert?</summary><p>Images: JPG, PNG, WebP, AVIF, BMP, GIF and HEIC (where your browser can decode it) — out to JPG, PNG or WebP, plus PDF. PDF: to JPG/PNG images, Word (.doc), plain text, compressed PDF, merged and rotated. Audio: MP3, WAV, M4A, OGG, FLAC and Opus in — MP3 or WAV out. Video: MP4, MOV, WebM and more in — WebM out, or MP3/WAV audio extracted. Browsers can't decode MKV, AVI or WMV natively, so for those, a desktop tool like HandBrake or FFmpeg is the honest recommendation.</p></details>
+      <details class="faq"><summary>Why does video conversion take as long as the video itself?</summary><p>Browser video conversion re-records the video in real time while it plays, using the same MediaRecorder engine browsers use for screen recording. A 2-minute clip takes about 2 minutes. Image, PDF and audio conversions are near-instant by comparison.</p></details>
+      <details class="faq"><summary>How do the exact-KB tools work?</summary><p>They re-encode your image (or image-to-PDF) again and again, lowering quality — and, if needed, dimensions — until the file fits under the target, then show you the final size before you download. Form uploads (50 KB, 100 KB, 200 KB) are the most common use.</p></details>
+      <details class="faq"><summary>Will converting reduce quality?</summary><p>Lossy formats (MP3, JPG, AAC) discard data every time they're re-encoded, so converting lossy → lossy (like MP3 → AAC) always costs a little quality. Convert from the highest-quality original you have — ideally a WAV/FLAC master for audio or the original photo for images. <span class="src">Source: <a href="https://snipsound.com/audio-formats/" target="_blank" rel="noopener">SnipSound</a></span></p></details>
+      <details class="faq"><summary>What file size should I set as my upload limit?</summary><p>There is no universal standard — it's an open question in our research. Observed SaaS examples range from 20–32 MB on free tiers to 2 GB per file on Teachable for course video. Pick limits from your storage and transcoding budget, and state them in the upload box.</p></details>
+      <details class="faq"><summary>What's the best format for a YouTube Short or Instagram Reel?</summary><p>The same file works for both: MP4 with H.264 video and AAC-LC audio, 1080×1920 (9:16), 30 fps, exported at 8–15 Mbps, with the moov atom at the front (“fast start”). Shorts are capped at 1080p, so skip the 4K export. Note Meta doesn't publish an official bitrate for organic Reels — treat 10–15 Mbps as export advice, not a spec. <span class="src">Sources: <a href="https://support.google.com/youtube/troubleshooter/2888402?hl=en" target="_blank" rel="noopener">YouTube Help</a>, <a href="https://monty.fast/blog/upload-reels-shorts-without-losing-quality/" target="_blank" rel="noopener">Monty</a></span></p></details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="f-in">
+    <span><strong style="color:var(--ink-2)">ConvertHub</strong> — PDF, video, audio &amp; image converter. Conversions run locally in your browser.</span>
+    <span><a href="#tools">Tools</a> · <a href="#guide">Format guide</a> · <a href="#pricing">Pricing</a> · <a href="#faq">FAQ</a></span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+
+<script src="engines.js"></script>
+<script src="payu.js"></script>
+</body>
+</html>
